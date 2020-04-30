@@ -38,7 +38,7 @@ Y = objetivo
 #separação do conjunto de treino e teste usando 80 treino/20 teste e usando estado randômico a cada execução
 X_treino, X_teste, Y_treino, Y_teste = train_test_split(X, Y, test_size = 0.2, random_state=None)
 
-#criação do modelo de LDA
+#criação do modelo de SVM
 modelo = svm.SVC(C=100.0, kernel='rbf', degree=3, gamma='auto',
                  decision_function_shape="ovr", random_state = 0)
 
